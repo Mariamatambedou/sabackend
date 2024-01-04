@@ -24,6 +24,7 @@ public class SentimentController {
     public void creer(@RequestBody Sentiment sentiment){
         this.sentimentService.creer(sentiment);
 
+
     }
     @GetMapping
     public @ResponseBody List<Sentiment> rechercher(@RequestParam(required = false) TypeSentiment type){
