@@ -15,7 +15,7 @@ pipeline {
     stage('Building image') {
       steps{
         script {
-            def dockerfilePath = '.devcontainer/Dockerfile'
+            def dockerfilePath = '.Dockerfile'
          dockerImage = docker.build(imagename, "-f ${dockerfilePath} .")
         }
       }
