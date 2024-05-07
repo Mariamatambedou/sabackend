@@ -8,7 +8,7 @@ pipeline {
   stages {
     stage('Cloning Git') {
       steps {
-        git([url: 'https://github.com/Mariamatambedou/sabackend.git', branch: 'main', credentialsId: 'LastGitJenkinsToken'])
+        git([url: 'https://github.com/Mariamatambedou/sabackend.git', branch: 'main', credentialsId: 'key'])
 
       }
     }
